@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: gray;
+}
+header button {
+    padding: 5px;
+    border-radius: 5px;
+}
+#galeria {
+    display: none;
+}
+main{
+    height: 80vh;
+}
+#contador button {
+    border-radius: 50%;
+    width: 20px;
+}
+.tema-claro {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.tema-escuro {
+    background-color: #333;
+    color: #f4f4f4;
+}
