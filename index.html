@@ -6,7 +6,7 @@
     <title>HTML, CSS E JS</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="tema-claro">
     <header>
         <h1>Projeto Interativo teste javascript</h1>
         <nav>
@@ -20,17 +20,19 @@
     <main>
         <section id="contador">
             <h2>Contador Interativo</h2>
-            <input  type="number" placeholder="Número de passos" >>
-            <button id = "incremento"> + </button>
+            <input type="number" placeholder="Número de passos">
+            <button id="incremento"> + </button>
             <span>0</span>
             <button id="decremento"> -</button>
         </section>
+
         <section id="galeria">
             <h2>Galeria de Imagens</h2>
+            <div id="imagem-principal">
+            </div>
+            <div id="imagem-outras"></div>
         </section>
     </main>
-
-
 
     <script src="./assets/js/script.js"></script>
 </body>

@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     height: 20vh;
     display: flex;
@@ -12,20 +13,26 @@ header {
     gap: 1rem;
     background-color: gray;
 }
+
 header button {
     padding: 5px;
     border-radius: 5px;
 }
+
+main {
+    height: 80vh;
+    padding: 1rem;
+}
+
 #galeria {
     display: none;
 }
-main{
-    height: 80vh;
-}
+
 #contador button {
     border-radius: 50%;
-    width: 20px;
+    width: 30px;
 }
+
 .tema-claro {
     background-color: #f4f4f4;
     color: #333;
@@ -34,4 +41,32 @@ main{
 .tema-escuro {
     background-color: #333;
     color: #f4f4f4;
+}
+#imagem-principal img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+#miniaturas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+#miniaturas img {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#miniaturas img.selecionada {
+    border-color: red;
+}
+
+@media (max-width: 768px) {
+    #miniaturas {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
