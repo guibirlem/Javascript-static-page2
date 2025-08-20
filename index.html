@@ -12,11 +12,11 @@
         <nav>
             <button id="btnContador">Contador Interativo</button>
             <button id="btnGaleria">Galeria de imagens</button>
+            <button id="btnCadastro">Cadastro de imagens</button>
             <button id="btnClaro">Tema Claro</button>
             <button id="btnEscuro">Tema escuro</button>
         </nav>
     </header>
-    
     <main>
         <section id="contador">
             <h2>Contador Interativo</h2>
@@ -25,15 +25,29 @@
             <span>0</span>
             <button id="decremento"> -</button>
         </section>
-
         <section id="galeria">
             <h2>Galeria de Imagens</h2>
             <div id="imagem-principal">
+              <img src="./assets/img/onibus1.jfif" alt="ônibus 1">
+              <img src="./assets/img/onibus2.jfif" alt="ônibus 2">
+              <img src="./assets/img/onibus3.jfif" alt="ônibus 3">
+              <img src="./assets/img/onibus4.jfif" alt="ônibus 4">
+              <img src="./assets/img/onibus5.jfif" alt="ônibus 5">
+              <img src="./assets/img/onibus6.jfif" alt="ônibus 6">
             </div>
             <div id="imagem-outras"></div>
         </section>
+        <section id="cadastro">
+            <h2>Cadastro de Imagens</h2>
+            <form>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao">
+                <label for="url">URL da Imagem:</label>
+                <input type="text" id="url">
+                <button type="button" id="btnSalvar">Salvar</button>
+            </form>
+        </section>
     </main>
-
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
